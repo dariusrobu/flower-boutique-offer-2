@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin | Bloom & Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo serif">Bloom & Co.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="shop.html" class="active">Magazin</a></li>
+                    <li><a href="events.html">Evenimente</a></li>
+                    <li><a href="blog.html">Inspirație</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="text-align: center; background: #f4f2ee; padding: 4rem 0;">
+            <div class="container">
+                <h1 class="serif" style="font-size: 3rem; margin-bottom: 1rem;">Magazin</h1>
+                <p style="color: var(--text-light);">Alege frumusețea potrivită pentru tine.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="toate">Toate</button>
+                    <button class="filter-btn" data-filter="buchete">Buchete</button>
+                    <button class="filter-btn" data-filter="plante">Plante</button>
+                    <button class="filter-btn" data-filter="cadouri">Cadouri</button>
+                </div>
+
+                <div class="grid grid-4" id="product-grid">
+                    <!-- Products -->
+                    <div class="product-card" data-category="buchete">
+                        <div class="product-img">
+                            <img src="imgs/buchet-pastel.jpg" alt="Buchet Pastel">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Buchet Pastel</h3>
+                            <p class="product-price">180 RON</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="plante">
+                        <div class="product-img">
+                            <img src="imgs/plante.jpg" alt="Monstera Deliciosa">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Monstera Deliciosa</h3>
+                            <p class="product-price">120 RON</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="buchete">
+                        <div class="product-img">
+                            <img src="imgs/buchet-trandafiri.jpg" alt="Buchet Trandafiri">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Buchet Trandafiri Roșii</h3>
+                            <p class="product-price">250 RON</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cadouri">
+                        <div class="product-img">
+                            <img src="imgs/cadouri.jpg" alt="Lumânare Parfumantă">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Lumânare Artizanală</h3>
+                            <p class="product-price">65 RON</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="buchete">
+                        <div class="product-img">
+                            <img src="imgs/buchet-camp.jpg" alt="Buchet de Câmp">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Buchet de Câmp</h3>
+                            <p class="product-price">145 RON</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="plante">
+                        <div class="product-img">
+                            <img src="imgs/spatifilium.jpg" alt="Spatifilium">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Spatifilium</h3>
+                            <p class="product-price">85 RON</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cadouri">
+                        <div class="product-img">
+                            <img src="imgs/vaza.jpg" alt="Vază Ceramică">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Vază Ceramică</h3>
+                            <p class="product-price">110 RON</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="buchete">
+                        <div class="product-img">
+                            <img src="imgs/buchet-exot.jpg" alt="Buchet Exot">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="serif">Buchet Exot</h3>
+                            <p class="product-price">320 RON</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="footer-logo serif">Bloom & Co.</h2>
+                    <p style="opacity: 0.8;">Florărie artizanală dedicată designului floral de excepție și sustenabilității.</p>
+                </div>
+                <div>
+                    <h4 class="serif" style="margin-bottom: 1.5rem;">Link-uri Rapide</h4>
+                    <ul>
+                        <li><a href="shop.html">Magazin</a></li>
+                        <li><a href="events.html">Evenimente</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="serif" style="margin-bottom: 1.5rem;">Social Media</h4>
+                    <p style="margin-bottom: 1rem; opacity: 0.8;">Urmărește-ne pentru inspirație zilnică.</p>
+                    <div style="display: flex; gap: 1rem;">
+                        <i data-lucide="instagram"></i>
+                        <i data-lucide="facebook"></i>
+                        <i data-lucide="pinterest"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bloom & Co. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/40700000000" class="whatsapp-btn">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <script>
+        lucide.createIcons();
+
+        // Simple filtering logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const products = document.querySelectorAll('.product-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                products.forEach(product => {
+                    if (filter === 'toate' || product.getAttribute('data-category') === filter) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

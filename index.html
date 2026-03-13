@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Co. | Florărie Artizanală</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo serif">Bloom & Co.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Acasă</a></li>
+                    <li><a href="shop.html">Magazin</a></li>
+                    <li><a href="events.html">Evenimente</a></li>
+                    <li><a href="blog.html">Inspirație</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('imgs/hero.jpg');">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="serif">Eleganță în fiecare petală</h1>
+                    <p style="margin-bottom: 2rem; font-size: 1.1rem;">Descoperă colecția noastră de primăvară, creată cu dragoste și atenție la detalii.</p>
+                    <a href="shop.html" class="btn btn-primary">Cumpără Acum</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collections -->
+        <section class="featured">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Colecții Recomandate</h2>
+                    <p style="color: var(--text-light);">Selecții curatoriate pentru momente de neuitat.</p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="imgs/buchete.jpg" alt="Buchete">
+                        </div>
+                        <div class="product-info" style="text-align: center;">
+                            <h3 class="serif">Buchete Artizanale</h3>
+                            <p style="margin-bottom: 1rem;">Design floral unic pentru orice ocazie.</p>
+                            <a href="shop.html?category=buchete" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.8rem;">Vezi Colecția</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="imgs/plante.jpg" alt="Plante">
+                        </div>
+                        <div class="product-info" style="text-align: center;">
+                            <h3 class="serif">Plante de Interior</h3>
+                            <p style="margin-bottom: 1rem;">Adu natura mai aproape de tine.</p>
+                            <a href="shop.html?category=plante" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.8rem;">Vezi Colecția</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="imgs/cadouri.jpg" alt="Cadouri">
+                        </div>
+                        <div class="product-info" style="text-align: center;">
+                            <h3 class="serif">Seturi Cadou</h3>
+                            <p style="margin-bottom: 1rem;">Combinații rafinate de flori și accesorii.</p>
+                            <a href="shop.html?category=cadouri" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.8rem;">Vezi Colecția</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Editorial Section -->
+        <section style="background-color: var(--deep-green); color: var(--white);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
+                    <div>
+                        <img src="imgs/workshop.jpg" alt="Workshop" style="border-radius: 4px;">
+                    </div>
+                    <div>
+                        <h4 class="serif" style="color: var(--terracotta); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">Povestea Noastră</h4>
+                        <h2 style="font-size: 3rem; margin-bottom: 1.5rem; line-height: 1.2;">Cultivăm frumosul în fiecare zi</h2>
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">La Bloom & Co., credem că florile au puterea de a transforma spațiile și de a transmite emoții fără cuvinte. Fiecare aranjament este o piesă de artă, lucrată manual cu flori proaspete de la producători locali.</p>
+                        <a href="blog.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Citește mai mult</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="footer-logo serif">Bloom & Co.</h2>
+                    <p style="opacity: 0.8;">Florărie artizanală dedicată designului floral de excepție și sustenabilității.</p>
+                </div>
+                <div>
+                    <h4 class="serif" style="margin-bottom: 1.5rem;">Link-uri Rapide</h4>
+                    <ul>
+                        <li style="margin-bottom: 0.8rem;"><a href="shop.html">Magazin</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="events.html">Evenimente</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="blog.html">Blog</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="serif" style="margin-bottom: 1.5rem;">Abonare Newsletter</h4>
+                    <p style="margin-bottom: 1rem; opacity: 0.8;">Primește noutăți despre colecțiile sezoniere.</p>
+                    <form style="flex-direction: row; gap: 0;">
+                        <input type="email" placeholder="Adresa de email" style="flex-grow: 1;">
+                        <button class="btn btn-primary" style="padding: 0 1.5rem;">OK</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bloom & Co. Toate drepturile rezervate. Creat cu ❤️ în România.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/40700000000" class="whatsapp-btn">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

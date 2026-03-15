@@ -16,6 +16,9 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo serif">Bloom & Co.</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Acasă</a></li>
                     <li><a href="shop.html">Magazin</a></li>
@@ -28,68 +31,66 @@
     </header>
 
     <main>
-        <section class="page-header" style="text-align: center; background: #f4f2ee; padding: 4rem 0;">
+        <section class="page-header">
             <div class="container">
-                <h1 class="serif" style="font-size: 3rem; margin-bottom: 1rem;">Contact</h1>
+                <h1 class="serif">Contact</h1>
                 <p style="color: var(--text-light);">Suntem aici să te ajutăm.</p>
             </div>
         </section>
 
         <section>
             <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                <div class="grid grid-2" style="gap: 3rem;">
                     <!-- Contact Info -->
                     <div>
-                        <h2 class="serif" style="font-size: 2rem; margin-bottom: 2rem;">Vino să ne vizitezi</h2>
+                        <h2 class="serif" style="font-size: 1.8rem; margin-bottom: 2rem;">Vino să ne vizitezi</h2>
                         
                         <div style="margin-bottom: 2rem;">
-                            <h4 class="serif" style="color: var(--terracotta); margin-bottom: 0.5rem;">Adresă</h4>
-                            <p>Strada Florilor nr. 15<br>București, Sector 1</p>
+                            <h4 class="serif" style="color: var(--terracotta); margin-bottom: 0.5rem; font-size: 1.1rem;">Adresă</h4>
+                            <p style="font-size: 0.95rem;">Strada Florilor nr. 15<br>București, Sector 1</p>
                         </div>
 
                         <div style="margin-bottom: 2rem;">
-                            <h4 class="serif" style="color: var(--terracotta); margin-bottom: 0.5rem;">Orar</h4>
-                            <p>Luni - Vineri: 09:00 - 20:00<br>Sâmbătă: 10:00 - 18:00<br>Duminică: Închis</p>
+                            <h4 class="serif" style="color: var(--terracotta); margin-bottom: 0.5rem; font-size: 1.1rem;">Orar</h4>
+                            <p style="font-size: 0.95rem;">Luni - Vineri: 09:00 - 20:00<br>Sâmbătă: 10:00 - 18:00<br>Duminică: Închis</p>
                         </div>
 
                         <div style="margin-bottom: 2rem;">
-                            <h4 class="serif" style="color: var(--terracotta); margin-bottom: 0.5rem;">Contact</h4>
-                            <p>Telefon: +40 700 000 000<br>Email: hello@bloomandco.ro</p>
+                            <h4 class="serif" style="color: var(--terracotta); margin-bottom: 0.5rem; font-size: 1.1rem;">Contact</h4>
+                            <p style="font-size: 0.95rem;">Telefon: +40 700 000 000<br>Email: hello@bloomandco.ro</p>
                         </div>
 
                         <div style="display: flex; gap: 1rem; margin-top: 2rem;">
-                            <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; border-radius: 4px; display: flex; align-items: center; gap: 10px;">
+                            <a href="https://wa.me/40700000000" class="btn btn-primary" style="padding: 0.8rem 1.5rem; display: flex; align-items: center; gap: 10px; font-size: 0.8rem;">
                                 <i data-lucide="message-circle" style="width: 18px;"></i> WhatsApp
                             </a>
                         </div>
                     </div>
 
                     <!-- Map Placeholder -->
-                    <div style="grid-column: span 2;">
-                        <div style="width: 100%; height: 450px; background: #e0ddd7; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div>
+                        <div style="width: 100%; height: 350px; background: #e0ddd7; display: flex; align-items: center; justify-content: center; position: relative; border-radius: 4px;">
                             <div style="text-align: center;">
                                 <i data-lucide="map-pin" style="width: 40px; height: 40px; color: var(--terracotta); margin-bottom: 1rem;"></i>
-                                <p class="serif" style="font-size: 1.2rem;">Locație Bloom & Co. (Harta)</p>
+                                <p class="serif" style="font-size: 1.2rem;">Harta Bloom & Co.</p>
                             </div>
-                            <!-- Simple styling for the placeholder to look like a map -->
-                            <div style="position: absolute; width: 100%; height: 100%; border: 10px solid var(--white); pointer-events: none;"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Secondary Contact Form -->
+        <!-- Contact Form -->
         <section style="background: var(--deep-green); color: var(--white);">
             <div class="container">
                 <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-                    <h2 class="serif" style="font-size: 2.5rem; margin-bottom: 1rem;">Trimite-ne un mesaj</h2>
-                    <p style="opacity: 0.8; margin-bottom: 3rem;">Ai o întrebare specifică sau vrei un aranjament personalizat?</p>
+                    <h2 class="serif" style="font-size: 2rem; margin-bottom: 1rem;">Trimite-ne un mesaj</h2>
+                    <p style="opacity: 0.8; margin-bottom: 2.5rem; font-size: 0.95rem;">Ai o întrebare sau vrei un aranjament personalizat?</p>
                     <form style="text-align: left;">
                         <input type="text" placeholder="Nume" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
                         <input type="email" placeholder="Email" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
                         <textarea rows="4" placeholder="Mesajul tău" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;"></textarea>
-                        <button class="btn btn-outline" style="border-color: var(--white); color: var(--white); width: 100%;">Trimite Mesaj</button>
+                        <button type="submit" class="btn btn-outline" style="border-color: var(--white); color: var(--white); width: 100%;">Trimite Mesaj</button>
                     </form>
                 </div>
             </div>
@@ -99,12 +100,12 @@
     <footer>
         <div class="container" style="text-align: center; padding: 3rem 0;">
             <h2 class="logo serif" style="margin-bottom: 1rem;">Bloom & Co.</h2>
-            <div style="display: flex; gap: 2rem; justify-content: center; margin-bottom: 2rem;">
+            <div style="display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1.5rem; font-size: 0.9rem;">
                 <a href="#">Instagram</a>
                 <a href="#">Facebook</a>
                 <a href="#">Pinterest</a>
             </div>
-            <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2024 Bloom & Co. Toate drepturile rezervate.</p>
+            <p style="font-size: 0.75rem; opacity: 0.6;">&copy; 2024 Bloom & Co. Toate drepturile rezervate.</p>
         </div>
     </footer>
 
@@ -112,8 +113,6 @@
         <i data-lucide="message-circle"></i>
     </a>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

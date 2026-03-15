@@ -16,6 +16,9 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo serif">Bloom & Co.</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Acasă</a></li>
                     <li><a href="shop.html">Magazin</a></li>
@@ -28,11 +31,11 @@
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('imgs/hero-events.jpg'); height: 60vh;">
+        <section class="hero" style="background-image: url('imgs/hero-events.jpg');">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="serif">Momente Memorabile</h1>
-                    <p>Design floral personalizat pentru nunți și evenimente corporate.</p>
+                    <p style="font-size: 1.1rem;">Design floral personalizat pentru nunți și evenimente corporate.</p>
                 </div>
             </div>
         </section>
@@ -41,19 +44,19 @@
             <div class="container">
                 <div class="grid grid-3">
                     <div style="text-align: center;">
-                        <i data-lucide="heart" style="color: var(--terracotta); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
-                        <h3 class="serif" style="font-size: 1.8rem; margin-bottom: 1rem;">Nunți</h3>
-                        <p style="color: var(--text-light);">De la buchetul miresei până la decorul recepției, transformăm visul tău în realitate.</p>
+                        <i data-lucide="heart" style="color: var(--terracotta); width: 40px; height: 40px; margin-bottom: 1rem;"></i>
+                        <h3 class="serif" style="font-size: 1.6rem; margin-bottom: 0.5rem;">Nunți</h3>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">De la buchetul miresei până la decorul recepției, transformăm visul tău în realitate.</p>
                     </div>
                     <div style="text-align: center;">
-                        <i data-lucide="briefcase" style="color: var(--terracotta); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
-                        <h3 class="serif" style="font-size: 1.8rem; margin-bottom: 1rem;">Corporate</h3>
-                        <p style="color: var(--text-light);">Aranjamente elegante care reflectă identitatea brandului tău și impresionează clienții.</p>
+                        <i data-lucide="briefcase" style="color: var(--terracotta); width: 40px; height: 40px; margin-bottom: 1rem;"></i>
+                        <h3 class="serif" style="font-size: 1.6rem; margin-bottom: 0.5rem;">Corporate</h3>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Aranjamente elegante care reflectă identitatea brandului tău și impresionează clienții.</p>
                     </div>
                     <div style="text-align: center;">
-                        <i data-lucide="star" style="color: var(--terracotta); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
-                        <h3 class="serif" style="font-size: 1.8rem; margin-bottom: 1rem;">Petreceri Private</h3>
-                        <p style="color: var(--text-light);">Adăugăm o notă de rafinament fiecărei aniversări sau cine speciale în familie.</p>
+                        <i data-lucide="star" style="color: var(--terracotta); width: 40px; height: 40px; margin-bottom: 1rem;"></i>
+                        <h3 class="serif" style="font-size: 1.6rem; margin-bottom: 0.5rem;">Petreceri Private</h3>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Adăugăm o notă de rafinament fiecărei aniversări sau cine speciale în familie.</p>
                     </div>
                 </div>
             </div>
@@ -63,15 +66,15 @@
             <div class="container">
                 <div style="max-width: 800px; margin: 0 auto;">
                     <div style="text-align: center; margin-bottom: 3rem;">
-                        <h2 class="serif" style="font-size: 2.5rem; margin-bottom: 1rem;">Formular de Solicitare</h2>
-                        <p style="color: var(--text-light);">Spune-ne mai multe despre evenimentul tău și te vom contacta în cel mai scurt timp.</p>
+                        <h2 class="serif" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Solicitare Ofertă</h2>
+                        <p style="color: var(--text-light); font-size: 0.95rem;">Spune-ne mai multe despre evenimentul tău.</p>
                     </div>
                     <form id="inquiry-form">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="grid grid-2">
                             <input type="text" placeholder="Nume Complet" required>
                             <input type="email" placeholder="Email" required>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="grid grid-2">
                             <input type="text" placeholder="Data Evenimentului">
                             <select>
                                 <option value="">Tip Eveniment</option>
@@ -93,15 +96,15 @@
             <div class="footer-grid">
                 <div>
                     <h2 class="footer-logo serif">Bloom & Co.</h2>
-                    <p style="opacity: 0.8;">Florărie artizanală dedicată designului floral de excepție și sustenabilității.</p>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">Florărie artizanală dedicată designului floral de excepție.</p>
                 </div>
                 <div>
-                    <h4 class="serif" style="margin-bottom: 1.5rem;">Contact Rapid</h4>
-                    <p style="opacity: 0.8; margin-bottom: 0.5rem;"><i data-lucide="phone" style="width: 14px; margin-right: 10px;"></i> +40 700 000 000</p>
-                    <p style="opacity: 0.8;"><i data-lucide="mail" style="width: 14px; margin-right: 10px;"></i> hello@bloomandco.ro</p>
+                    <h4 class="serif" style="margin-bottom: 1rem;">Contact Rapid</h4>
+                    <p style="opacity: 0.8; margin-bottom: 0.5rem; font-size: 0.9rem;"><i data-lucide="phone" style="width: 14px; margin-right: 10px;"></i> +40 700 000 000</p>
+                    <p style="opacity: 0.8; font-size: 0.9rem;"><i data-lucide="mail" style="width: 14px; margin-right: 10px;"></i> hello@bloomandco.ro</p>
                 </div>
                 <div>
-                    <h4 class="serif" style="margin-bottom: 1.5rem;">Urmărește-ne</h4>
+                    <h4 class="serif" style="margin-bottom: 1rem;">Urmărește-ne</h4>
                     <div style="display: flex; gap: 1rem;">
                         <i data-lucide="instagram"></i>
                         <i data-lucide="facebook"></i>
@@ -119,8 +122,8 @@
         <i data-lucide="message-circle"></i>
     </a>
 
+    <script src="main.js"></script>
     <script>
-        lucide.createIcons();
         document.getElementById('inquiry-form').addEventListener('submit', (e) => {
             e.preventDefault();
             alert('Vă mulțumim! Solicitarea dvs. a fost trimisă cu succes.');

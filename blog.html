@@ -16,6 +16,9 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo serif">Bloom & Co.</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Acasă</a></li>
                     <li><a href="shop.html">Magazin</a></li>
@@ -28,9 +31,9 @@
     </header>
 
     <main>
-        <section class="page-header" style="text-align: center; background: #f4f2ee; padding: 4rem 0;">
+        <section class="page-header">
             <div class="container">
-                <h1 class="serif" style="font-size: 3rem; margin-bottom: 1rem;">Inspirație & Blog</h1>
+                <h1 class="serif">Inspirație & Blog</h1>
                 <p style="color: var(--text-light);">Ghidul tău pentru un stil de viață botanic.</p>
             </div>
         </section>
@@ -41,33 +44,33 @@
                     <!-- Article 1 -->
                     <article class="blog-card">
                         <div class="blog-img">
-                            <img src="imgs/blog-care.jpg" alt="Ghid îngrijire" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="imgs/blog-care.jpg" alt="Ghid îngrijire">
                         </div>
                         <p class="blog-date">12 Martie 2024</p>
                         <h3 class="serif">Ghid de îngrijire pentru florile tăiate</h3>
-                        <p style="color: var(--text-light); margin-bottom: 1.5rem;">Află cum poți prelungi viața buchetului tău preferat cu câteva trucuri simple.</p>
+                        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.9rem;">Află cum poți prelungi viața buchetului tău preferat cu câteva trucuri simple.</p>
                         <a href="#" style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600; border-bottom: 1px solid var(--terracotta);">Citește Articolul</a>
                     </article>
 
                     <!-- Article 2 -->
                     <article class="blog-card">
                         <div class="blog-img">
-                            <img src="imgs/blog-weddings.jpg" alt="Tendințe nunți" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="imgs/blog-weddings.jpg" alt="Tendințe nunți">
                         </div>
                         <p class="blog-date">5 Martie 2024</p>
                         <h3 class="serif">Tendințe florale pentru nunțile din 2024</h3>
-                        <p style="color: var(--text-light); margin-bottom: 1.5rem;">Descoperă culorile și stilurile care vor domina sezonul acesta de evenimente.</p>
+                        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.9rem;">Descoperă culorile și stilurile care vor domina sezonul acesta de evenimente.</p>
                         <a href="#" style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600; border-bottom: 1px solid var(--terracotta);">Citește Articolul</a>
                     </article>
 
                     <!-- Article 3 -->
                     <article class="blog-card">
                         <div class="blog-img">
-                            <img src="imgs/blog-workshop.jpg" alt="Workshop flori" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="imgs/blog-workshop.jpg" alt="Workshop flori">
                         </div>
                         <p class="blog-date">28 Februarie 2024</p>
                         <h3 class="serif">Cum să alegi plantele potrivite pentru apartament</h3>
-                        <p style="color: var(--text-light); margin-bottom: 1.5rem;">Un ghid complet pentru începători despre lumina și umiditatea necesară plantelor.</p>
+                        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.9rem;">Un ghid complet pentru începători despre lumina și umiditatea necesară plantelor.</p>
                         <a href="#" style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600; border-bottom: 1px solid var(--terracotta);">Citește Articolul</a>
                     </article>
                 </div>
@@ -84,15 +87,15 @@
             <div class="footer-grid">
                 <div>
                     <h2 class="footer-logo serif">Bloom & Co.</h2>
-                    <p style="opacity: 0.8;">Inspirație botanică în cutia ta poștală.</p>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">Inspirație botanică în cutia ta poștală.</p>
                     <form style="flex-direction: row; gap: 0; margin-top: 1rem;">
                         <input type="email" placeholder="Email" style="flex-grow: 1; padding: 0.8rem;">
-                        <button class="btn btn-primary" style="padding: 0 1rem;">Trimite</button>
+                        <button class="btn btn-primary" style="padding: 0 1rem;">OK</button>
                     </form>
                 </div>
                 <div>
-                    <h4 class="serif" style="margin-bottom: 1.5rem;">Categorii</h4>
-                    <ul>
+                    <h4 class="serif" style="margin-bottom: 1rem;">Categorii</h4>
+                    <ul style="font-size: 0.9rem;">
                         <li style="margin-bottom: 0.5rem;"><a href="#">Îngrijire Plante</a></li>
                         <li style="margin-bottom: 0.5rem;"><a href="#">Design Floral</a></li>
                         <li style="margin-bottom: 0.5rem;"><a href="#">Evenimente</a></li>
@@ -100,7 +103,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="serif" style="margin-bottom: 1.5rem;">Social</h4>
+                    <h4 class="serif" style="margin-bottom: 1rem;">Social</h4>
                     <div style="display: flex; gap: 1rem;">
                         <i data-lucide="instagram"></i>
                         <i data-lucide="facebook"></i>
@@ -118,8 +121,6 @@
         <i data-lucide="message-circle"></i>
     </a>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

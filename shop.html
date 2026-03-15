@@ -16,6 +16,9 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo serif">Bloom & Co.</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Acasă</a></li>
                     <li><a href="shop.html" class="active">Magazin</a></li>
@@ -28,9 +31,9 @@
     </header>
 
     <main>
-        <section class="page-header" style="text-align: center; background: #f4f2ee; padding: 4rem 0;">
+        <section class="page-header">
             <div class="container">
-                <h1 class="serif" style="font-size: 3rem; margin-bottom: 1rem;">Magazin</h1>
+                <h1 class="serif">Magazin</h1>
                 <p style="color: var(--text-light);">Alege frumusețea potrivită pentru tine.</p>
             </div>
         </section>
@@ -45,7 +48,6 @@
                 </div>
 
                 <div class="grid grid-4" id="product-grid">
-                    <!-- Products -->
                     <div class="product-card" data-category="buchete">
                         <div class="product-img">
                             <img src="imgs/buchet-pastel.jpg" alt="Buchet Pastel">
@@ -135,11 +137,11 @@
             <div class="footer-grid">
                 <div>
                     <h2 class="footer-logo serif">Bloom & Co.</h2>
-                    <p style="opacity: 0.8;">Florărie artizanală dedicată designului floral de excepție și sustenabilității.</p>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">Florărie artizanală dedicată designului floral de excepție și sustenabilității.</p>
                 </div>
                 <div>
-                    <h4 class="serif" style="margin-bottom: 1.5rem;">Link-uri Rapide</h4>
-                    <ul>
+                    <h4 class="serif" style="margin-bottom: 1rem;">Link-uri Rapide</h4>
+                    <ul style="font-size: 0.9rem;">
                         <li><a href="shop.html">Magazin</a></li>
                         <li><a href="events.html">Evenimente</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -147,8 +149,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="serif" style="margin-bottom: 1.5rem;">Social Media</h4>
-                    <p style="margin-bottom: 1rem; opacity: 0.8;">Urmărește-ne pentru inspirație zilnică.</p>
+                    <h4 class="serif" style="margin-bottom: 1rem;">Social Media</h4>
                     <div style="display: flex; gap: 1rem;">
                         <i data-lucide="instagram"></i>
                         <i data-lucide="facebook"></i>
@@ -166,30 +167,6 @@
         <i data-lucide="message-circle"></i>
     </a>
 
-    <script>
-        lucide.createIcons();
-
-        // Simple filtering logic
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const products = document.querySelectorAll('.product-card');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Update active button
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                const filter = btn.getAttribute('data-filter');
-
-                products.forEach(product => {
-                    if (filter === 'toate' || product.getAttribute('data-category') === filter) {
-                        product.style.display = 'block';
-                    } else {
-                        product.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
